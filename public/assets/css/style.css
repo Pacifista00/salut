@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* color palette */
+/* #000957
+#344CB7
+#577BC1
+#FFEB00 */
+/* end color palette */
+
+.my-bg-blue {
+    background-color: #3fa2f6;
+}
+.my-btn {
+    background-color: #29a9e0 !important;
+}
+.my-btn2 {
+    background-color: #01a652 !important;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.nav-item {
+    font-weight: 500;
+    position: relative;
+}
+.nav-link::after {
+    transition: 0.2s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
