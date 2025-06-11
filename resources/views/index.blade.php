@@ -46,20 +46,40 @@
             <div class="row">
                 <div class="col-6">
                     <ul class="list-group">
-                        <li class="list-group-item border-0 bg-transparent">An item</li>
-                        <li class="list-group-item border-0 bg-transparent">A second item</li>
-                        <li class="list-group-item border-0 bg-transparent">A third item</li>
-                        <li class="list-group-item border-0 bg-transparent">A fourth item</li>
-                        <li class="list-group-item border-0 bg-transparent">And a fifth one</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>An
+                            item
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            second
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            third
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            fourth
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>And
+                            a
+                            fifth one</li>
                     </ul>
                 </div>
                 <div class="col-6">
                     <ul class="list-group">
-                        <li class="list-group-item border-0 bg-transparent">An item</li>
-                        <li class="list-group-item border-0 bg-transparent">A second item</li>
-                        <li class="list-group-item border-0 bg-transparent">A third item</li>
-                        <li class="list-group-item border-0 bg-transparent">A fourth item</li>
-                        <li class="list-group-item border-0 bg-transparent">And a fifth one</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>An
+                            item
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            second
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            third
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>A
+                            fourth
+                            item</li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-circle-check me-1"></i>And
+                            a
+                            fifth one</li>
                     </ul>
                 </div>
             </div>
