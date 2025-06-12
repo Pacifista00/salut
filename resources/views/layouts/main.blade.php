@@ -18,16 +18,30 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
     <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
             if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
+                navbar.classList.add("navbar-scrolled");
             } else {
-                navbar.classList.remove('navbar-scrolled');
+                navbar.classList.remove("navbar-scrolled");
             }
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeBtn = document.getElementById("closeBtn");
 
+            hamburgerBtn.addEventListener("click", () => {
+                mobileMenu.classList.add("show");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                mobileMenu.classList.remove("show");
+            });
+        });
+    </script>
 </body>
 
 </html>

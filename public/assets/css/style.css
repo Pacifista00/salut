@@ -8,13 +8,19 @@
 /* end color palette */
 
 .my-bg-blue {
-    background-color: #3fa2f6;
+    background-color: #2d348d;
+}
+.my-bg-gray {
+    background-color: #eeeeee;
 }
 .my-btn {
-    background-color: #29a9e0 !important;
+    background-color: #2d348d !important;
+    color: white !important;
 }
-.my-btn2 {
-    background-color: #01a652 !important;
+.my-btn-transparent {
+    background-color: #f5ed19 !important;
+    /* border: 2px solid black !important; */
+    color: black;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -22,6 +28,17 @@ body {
     font-style: normal;
 }
 
+
+.jumbotron{
+    background: linear-gradient( #dcdef4,white, white);
+}
+.transition-navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .nav-item {
     font-weight: 500;
     position: relative;
@@ -34,8 +51,80 @@ body {
     bottom: -2px;
     width: 0%;
     height: 3px;
-    background-color: black;
+    background-color: #2d348d;
 }
 .nav-link:hover::after {
     width: 100%;
+}
+
+/* Mobile fullscreen menu */
+.mobile-fullscreen-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: none;
+}
+.mobile-fullscreen-navbar.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.floating-box {
+    position: absolute;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 10;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 0 5px #2d348d;
+}
+.hero-title{
+    font-size: 42px;
+}
+
+/* Kotak Mahasiswa di kiri bawah gambar */
+.box-mahasiswa {
+    bottom: 20px;
+    left: 80px;
+}
+
+/* Kotak Dosen di kanan bawah gambar */
+.box-dosen {
+    bottom: 200px;
+    right: 50px;
 }
