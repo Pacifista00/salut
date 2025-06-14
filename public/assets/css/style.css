@@ -7,6 +7,15 @@
 #FFEB00 */
 /* end color palette */
 
+.my-text-blue {
+    color: #2d348d;
+}
+.my-text-yellow {
+    color: #ffeb00;
+}
+.my-bg-yellow {
+    background-color: #ffeb00;
+}
 .my-bg-blue {
     background-color: #2d348d;
 }
@@ -17,21 +26,18 @@
     background-color: #2d348d !important;
     color: white !important;
 }
-.my-btn-transparent {
+.my-btn-yellow {
     background-color: #f5ed19 !important;
-    /* border: 2px solid black !important; */
     color: black;
 }
+
 body {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    max-width: 100%;
+    width: 100%;
 }
 
-
-.jumbotron{
-    background: linear-gradient( #dcdef4,white, white);
-}
+/* navbar */
 .transition-navbar {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -78,31 +84,13 @@ body {
     transform: translateY(0);
     pointer-events: auto;
 }
+/* Mobile fullscreen menu */
+/* end navbar */
 
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  color: #fff;
-  padding: 10px 0;
-  position: relative;
+/* jumbotron */
+.jumbotron {
+    background: linear-gradient(#dcdef4, white, white);
 }
-
-.marquee {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .floating-box {
     position: absolute;
     background-color: white;
@@ -113,18 +101,40 @@ body {
     text-align: center;
     box-shadow: 0 0 5px #2d348d;
 }
-.hero-title{
+.hero-title {
     font-size: 42px;
 }
-
-/* Kotak Mahasiswa di kiri bawah gambar */
 .box-mahasiswa {
     bottom: 20px;
     left: 80px;
 }
-
-/* Kotak Dosen di kanan bawah gambar */
 .box-dosen {
     bottom: 200px;
     right: 50px;
 }
+/* end jumbotron */
+
+/* running text */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* end running text */

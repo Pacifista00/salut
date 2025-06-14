@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top w-100 transition-navbar">
+<nav class="navbar navbar-expand-lg fixed-top w-100 transition-navbar" data-aos="fade-down">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img height="35px" src="{{ asset('assets/img/logo.png') }}" alt="">
@@ -24,6 +24,12 @@
                 <li class="nav-item mx-2">
                     <a class="nav-link text-dark" href="#">Alur</a>
                 </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-dark" href="#">Prodi</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-dark" href="#">FAQ</a>
+                </li>
             </ul>
             <span>
                 <button class="btn my-btn px-5 rounded-pill">Daftar</button>
@@ -31,7 +37,8 @@
         </div>
 
         <!-- Mobile Fullscreen Nav -->
-        <div class="mobile-fullscreen-navbar d-flex flex-column align-items-center justify-content-start" id="mobileMenu">
+        <div class="mobile-fullscreen-navbar d-flex flex-column align-items-center justify-content-start"
+            id="mobileMenu">
             <div class="w-100 d-flex justify-content-between p-4">
                 <img height="35px" src="{{ asset('assets/img/logo.png') }}" alt="">
                 <button class="btn btn-close btn-close-dark" id="closeBtn"></button>
@@ -48,6 +55,12 @@
                 </li>
                 <li class="nav-item my-2">
                     <a class="nav-link text-dark fs-4" href="#">Alur</a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link text-dark fs-4" href="#">Prodi</a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link text-dark fs-4" href="#">FAQ</a>
                 </li>
             </ul>
             <div class="mt-4">
