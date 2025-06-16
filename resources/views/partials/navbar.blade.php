@@ -13,26 +13,26 @@
         <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarText">
             <ul class="navbar-nav me-auto mb-lg-0 mx-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">Home</a>
+                    <a class="nav-link text-dark" href="#home">Home</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">Profil</a>
+                    <a class="nav-link text-dark" href="#tentang">Tentang</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">Kegiatan</a>
+                    <a class="nav-link text-dark" href="#fakultas">Fakultas</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">Alur</a>
+                    <a class="nav-link text-dark" href="#alur">Alur Pendaftaran</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">Prodi</a>
+                    <a class="nav-link text-dark" href="#lokasi">Lokasi</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link text-dark" href="#">FAQ</a>
+                    <a class="nav-link text-dark" href="#faq">FAQ</a>
                 </li>
             </ul>
             <span>
-                <button class="btn my-btn px-5 rounded-pill">Daftar</button>
+                <a href="{{ route('daftar') }}" class="btn my-btn px-5 rounded-pill">Daftar</a>
             </span>
         </div>
 
@@ -45,26 +45,26 @@
             </div>
             <ul class="navbar-nav text-center mt-4">
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">Home</a>
+                    <a class="nav-link text-dark fs-4" href="#home">Home</a>
                 </li>
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">Profil</a>
+                    <a class="nav-link text-dark fs-4" href="#tentang">Tentang</a>
                 </li>
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">Kegiatan</a>
+                    <a class="nav-link text-dark fs-4" href="#fakultas">Fakultas</a>
                 </li>
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">Alur</a>
+                    <a class="nav-link text-dark fs-4" href="#alur">Alur Pendaftaran</a>
                 </li>
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">Prodi</a>
+                    <a class="nav-link text-dark fs-4" href="#lokasi">Lokasi</a>
                 </li>
                 <li class="nav-item my-2">
-                    <a class="nav-link text-dark fs-4" href="#">FAQ</a>
+                    <a class="nav-link text-dark fs-4" href="#faq">FAQ</a>
                 </li>
             </ul>
             <div class="mt-4">
-                <button class="btn my-btn px-5 rounded-pill">Daftar</button>
+                <a href="{{ route('daftar') }}" class="btn my-btn px-5 rounded-pill">Daftar</a>
             </div>
         </div>
     </div>

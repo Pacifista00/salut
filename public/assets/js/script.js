@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hamburgerBtn = document.getElementById("hamburgerBtn");
     const mobileMenu = document.getElementById("mobileMenu");
     const closeBtn = document.getElementById("closeBtn");
+    const navLinks = mobileMenu.querySelectorAll(".nav-link");
 
     hamburgerBtn.addEventListener("click", () => {
         mobileMenu.classList.add("show");
@@ -18,6 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     closeBtn.addEventListener("click", () => {
         mobileMenu.classList.remove("show");
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.remove("show");
+    }
+    navLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
     });
 });
 
@@ -40,6 +48,3 @@ function animateCounters() {
         update();
     });
 }
-
-// Jalankan saat semua konten dimuat
-window.addEventListener("load", animateCounters);

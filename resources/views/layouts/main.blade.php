@@ -14,6 +14,7 @@
 <body>
     @include('partials.navbar')
     @yield('content')
+    @include('partials.modal-prodi')
     @include('partials.footer')
     <script src="https://kit.fontawesome.com/f1a06f399e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

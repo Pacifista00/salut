@@ -19,3 +19,4 @@ use App\Http\Controllers\MainController;
 // });
 
 Route::get('/', [MainController::class, 'index']);
+Route::get('/daftar', [MainController::class, 'formPage'])->name('daftar');
