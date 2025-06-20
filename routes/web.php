@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PendaftaranController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,8 @@ use App\Http\Controllers\MainController;
 // });
 
 Route::get('/', [MainController::class, 'index']);
-Route::get('/daftar', [MainController::class, 'formPage'])->name('daftar');
+Route::get('/form-pendaftaran', [MainController::class, 'formPage'])->name('form-pendaftaran');
+
+Route::post('/daftar', [PendaftaranController::class, 'daftar'])->name('daftar');
+
+Route::get('/dashboard', [DashboardController::class, 'index']);

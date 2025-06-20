@@ -25,7 +25,26 @@
     <script>
         AOS.init();
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if (session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Sukses!',
+                text: '{{ session('success') }}',
+            });
+        @elseif (session('errors'))
+            let errorMessages = '';
+            @foreach (session('errors')->all() as $error)
+                errorMessages += '• {{ $error }}\n';
+            @endforeach
+            Swal.fire({
+                icon: 'error',
+                title: 'Validasi Gagal',
+                text: errorMessages,
+            });
+        @endif
+    </script>
 </body>
 
 </html>

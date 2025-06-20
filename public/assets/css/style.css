@@ -31,7 +31,7 @@
 }
 .my-btn-yellow {
     background-color: #f5ed19 !important;
-    color: black;
+    color: rgb(44, 44, 44) !important;
 }
 
 body {
@@ -92,9 +92,9 @@ body {
 /* end navbar */
 
 /* jumbotron */
-.jumbotron {
+/* .jumbotron {
     background: linear-gradient(#dcdef4, white, white);
-}
+} */
 .floating-box {
     position: absolute;
     background-color: white;

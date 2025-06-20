@@ -15,12 +15,16 @@
                     </div>
                     <div class="row pt-3" data-aos="fade-up">
                         <div class="col-lg-6 pb-2">
-                            <button class="btn my-btn rounded-pill w-100 py-3 fs-4">DAFTAR<i
-                                    class="ms-2 fa-solid fa-pen-clip"></i></button>
+                            <a href="{{ route('form-pendaftaran') }}">
+                                <button class="btn my-btn rounded-pill w-100 py-3 fs-4">DAFTAR<i
+                                        class="ms-2 fa-solid fa-pen-clip"></i></button>
+                            </a>
                         </div>
                         <div class="col-lg-6 pb-2">
-                            <button class="btn my-btn-yellow rounded-pill w-100 py-3 fs-4">DOKTORTJ<i
-                                    class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+                            <a href="https://doktortj.com/" target="__blank">
+                                <button class="btn my-btn-yellow rounded-pill w-100 py-3 fs-4">DOKTORTJ<i
+                                        class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </a>
                         </div>
                     </div>
                 </div>
