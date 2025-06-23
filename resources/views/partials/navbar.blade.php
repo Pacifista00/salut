@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top w-100 transition-navbar" data-aos="fade-down">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img height="35px" src="{{ asset('assets/img/logo.png') }}" alt="">
+            <img height="35px" src="{{ asset('img/logo.png') }}" alt="">
         </a>
 
         <!-- Hamburger button -->
@@ -40,7 +40,7 @@
         <div class="mobile-fullscreen-navbar d-flex flex-column align-items-center justify-content-start"
             id="mobileMenu">
             <div class="w-100 d-flex justify-content-between p-4">
-                <img height="35px" src="{{ asset('assets/img/logo.png') }}" alt="">
+                <img height="35px" src="{{ asset('img/logo.png') }}" alt="">
                 <button class="btn btn-close btn-close-dark" id="closeBtn"></button>
             </div>
             <ul class="navbar-nav text-center mt-4">

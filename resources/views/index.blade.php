@@ -31,7 +31,7 @@
 
                 <div class="col-lg-6 text-center d-flex justify-content-center align-items-end pt-5 position-relative"
                     data-aos="fade-left">
-                    <img src="{{ asset('assets/img/Asset 2.png') }}" alt="" width="400px">
+                    <img src="{{ asset('img/Asset 2.png') }}" alt="" width="400px">
                 </div>
 
             </div>
@@ -87,7 +87,7 @@
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('/assets/img/logoUT.png') }}" alt=""
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
                                     width="130px">
                             </div>
                             <h5 class="card-title">FHISIP</h5>
@@ -105,7 +105,7 @@
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('/assets/img/logoUT.png') }}" alt=""
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
                                     width="130px">
                             </div>
                             <h5 class="card-title">FEB</h5>
@@ -123,7 +123,7 @@
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('/assets/img/logoUT.png') }}" alt=""
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
                                     width="130px">
                             </div>
                             <h5 class="card-title">FST</h5>
@@ -141,7 +141,7 @@
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('/assets/img/logoUT.png') }}" alt=""
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
                                     width="130px">
                             </div>
                             <h5 class="card-title">FKIP</h5>
@@ -162,7 +162,7 @@
         <div class="container text-dark p-4">
             <div class="row">
                 <div class="col-12 col-lg-5 text-center my-auto mb-3 mb-lg-0" data-aos="fade-right">
-                    <img src="{{ asset('/assets/img/mhs.png') }}" alt="" width="270px">
+                    <img src="{{ asset('img/mhs.png') }}" alt="" width="270px">
                 </div>
                 <div class="col-12 col-lg-7" data-aos="fade-left">
                     <h1 class="mb-3 mb-lg-4 text-dark">Kenapa mendaftar di Salut DOKTORTJ Tegal</h1>
@@ -200,22 +200,22 @@
             <h1 class="text-center mb-3 mb-lg-4" data-aos="fade-up">Alur Pendaftaran</h1>
             <div class="row" data-aos="fade-up">
                 <div class="col lg-4 text-center">
-                    <img src="{{ asset('assets/img/alur1.png') }}" alt="" height="170px">
+                    <img src="{{ asset('img/alur1.png') }}" alt="" height="170px">
                     <h5 class="pt-2">Pilih Prodi</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
                 <div class="col lg-4 text-center">
-                    <img src="{{ asset('assets/img/alur2.png') }}" alt="" height="170px">
+                    <img src="{{ asset('img/alur2.png') }}" alt="" height="170px">
                     <h5 class="pt-2">Isi Formulir</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
                 <div class="col lg-4 text-center">
-                    <img src="{{ asset('assets/img/alur3.png') }}" alt="" height="170px">
+                    <img src="{{ asset('img/alur3.png') }}" alt="" height="170px">
                     <h5 class="pt-2">Konfirmasi</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
                 <div class="col lg-4 text-center">
-                    <img src="{{ asset('assets/img/alur4.png') }}" alt="" height="170px">
+                    <img src="{{ asset('img/alur4.png') }}" alt="" height="170px">
                     <h5 class="pt-2">Tunggu Email</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>

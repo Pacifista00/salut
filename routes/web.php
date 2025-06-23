@@ -16,9 +16,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/login', function () {
+    return view('admin.login');
+});
 
 Route::get('/', [MainController::class, 'index']);
 Route::get('/form-pendaftaran', [MainController::class, 'formPage'])->name('form-pendaftaran');
