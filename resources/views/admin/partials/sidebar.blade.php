@@ -9,9 +9,12 @@
 <nav class="pc-sidebar">
     <div class="navbar-wrapper">
         <div class="m-header">
-            <a href="../dashboard/index.html" class="b-brand text-primary">
+            <a class="pt-3" href="../dashboard/index.html" class="b-brand text-primary">
                 <!-- ========   Change your logo from here   ============ -->
-                <span class="badge bg-light-success rounded-pill ms-2 theme-version">v2.5.0</span>
+                {{-- <span class="badge bg-light-success rounded-pill ms-2 theme-version">v2.5.0</span> --}}
+                <span>
+                    <h3>Dashboard Admin</h3>
+                </span>
             </a>
         </div>
         <div class="navbar-content">
@@ -61,14 +64,36 @@
                     <label>Navigation</label>
                 </li>
 
+                <li class="pc-item active">
+                    <a href="../dashboard/index.html" class="pc-link">
+                        <span class="pc-micon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="pc-mtext">Dashboard</span>
+                    </a>
+                </li>
                 <li class="pc-item">
                     <a href="../dashboard/index.html" class="pc-link">
                         <span class="pc-micon">
-                            <svg class="pc-icon">
-                                <use xlink:href="#custom-status-up"></use>
-                            </svg>
+                            <i class="fas fa-university"></i>
                         </span>
-                        <span class="pc-mtext">Dashboard</span>
+                        <span class="pc-mtext">Fakultas</span>
+                    </a>
+                </li>
+                <li class="pc-item">
+                    <a href="../dashboard/index.html" class="pc-link">
+                        <span class="pc-micon">
+                            <i class="fas fa-book-open"></i>
+                        </span>
+                        <span class="pc-mtext">Prodi</span>
+                    </a>
+                </li>
+                <li class="pc-item">
+                    <a href="../dashboard/index.html" class="pc-link">
+                        <span class="pc-micon">
+                            <i class="fas fa-user-plus"></i>
+                        </span>
+                        <span class="pc-mtext">Pendaftar</span>
                     </a>
                 </li>
             </ul>

@@ -35,9 +35,7 @@
 
 <body data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-layout="vertical" data-pc-direction="ltr"
     data-pc-theme_contrast="" data-pc-theme="light">
-    @include('admin.partials.sidebar')
     @yield('dashboard-content')
-    @include('admin.partials.footer')
     <!-- [Page Specific JS] start -->
     <script src="{{ asset('dashboard-assets/js/plugins/apexcharts.min.js') }}"></script>
     <script src="{{ asset('dashboard-assets/js/pages/dashboard-default.js') }}"></script>
