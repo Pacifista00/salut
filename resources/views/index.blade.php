@@ -47,48 +47,63 @@
     </section>
     <section id="tentang">
         <div class="container p-4 text-dark">
-            <h1 class="text-center mb-3 mb-lg-4 text-dark" data-aos="fade-up">Salut DOKTORTJ</h1>
-            <p class="text-center" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                obcaecati
-                doloribus
-                distinctio atque
-                tempora asperiores. Explicabo quo dolor, maxime quibusdam fugiat alias nemo sint sit minus libero a
-                distinctio tempore voluptatibus, aut, qui eveniet nostrum sapiente adipisci! Harum commodi ea dicta
-                consequatur soluta a reprehenderit est tempora non, corporis dignissimos illum totam deleniti at officia
-                iusto fuga dolore. Nam reprehenderit cupiditate, ad itaque minus deserunt ipsum sint nihil, esse molestias
-                eligendi mollitia saepe? Ipsa, ullam voluptatibus accusamus qui pariatur commodi.</p>
-            <div class="d-flex mt-4 gap-5 justify-content-center" data-aos="fade-up">
-                <div class="mb-2">
-                    <div class="text-center">
-                        <h1 class="stat-number" data-target="20">0</h1>
-                        <p>Prodi</p>
+            <h1 class="text-center mb-3 mb-lg-4 text-dark sub-title pb-3 fw-bold" data-aos="fade-up">PROFIL PERUSAHAAN</h1>
+            <div class="row align-items-center align-items-lg-start" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div style="max-width: 100%; display: flex; justify-content: center;">
+                        <iframe class="mb-3" width="560" height="315"
+                            src="https://www.youtube.com/embed/vrZlsUbfRGU?si=maxAMGRcyKLrni2m" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            style="
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        "
+                            onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 15px 30px rgba(0, 0, 0, 0.3)'"
+                            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.2)'"></iframe>
                     </div>
+
                 </div>
-                <div class="mb-2">
-                    <div class="text-center">
-                        <h1 class="stat-number" data-target="20">0</h1>
-                        <p>Mahasiswa</p>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <div class="text-center">
-                        <h1 class="stat-number" data-target="4">0</h1>
-                        <p>Fakultas</p>
+                <div class="col-lg-6 mb-4 mb-md-0">
+                    <p class="text-center text-lg-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, obcaecati
+                        doloribus distinctio atque tempora asperiores. Explicabo quo dolor, maxime
+                        quibusdam fugiat alias nemo sint sit minus libero a distinctio tempore voluptatibus,
+                        aut, qui eveniet nostrum sapiente adipisci! Harum commodi ea dicta consequatur
+                        soluta a reprehenderit est tempora non, corporis dignissimos illum totam deleniti
+                        at officia iusto fuga dolore. Nam reprehenderit cupiditate, ad itaque minus
+                        deserunt ipsum sint nihil,
+                    </p>
+                    <div class="d-flex gap-5 justify-content-center" data-aos="fade-up">
+                        <div class="mb-2 text-center">
+                            <h1 class="stat-number" data-target="20">0</h1>
+                            <p>Prodi</p>
+                        </div>
+                        <div class="mb-2 text-center">
+                            <h1 class="stat-number" data-target="20">0</h1>
+                            <p>Mahasiswa</p>
+                        </div>
+                        <div class="mb-2 text-center">
+                            <h1 class="stat-number" data-target="4">0</h1>
+                            <p>Fakultas</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="fakultas" class="my-bg-blue">
         <div class="container text-dark p-4">
-            <h1 class="text-center mb-3 mb-lg-4 text-light" data-aos="fade-up">Fakultas</h1>
+            <h1 class="text-center mb-3 mb-lg-4 text-light sub-title pb-3 fw-bold" data-aos="fade-up">FAKULTAS</h1>
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-3 mb-2">
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
-                                    width="130px">
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt="" width="130px">
                             </div>
                             <h5 class="card-title">FHISIP</h5>
                             <p>Some quick example text to build on the card title and make up the bulk of
@@ -105,8 +120,7 @@
                     <div class="card rounded-5 py-2">
                         <div class="card-body text-center">
                             <div class="text-center">
-                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt=""
-                                    width="130px">
+                                <img class="center mb-2" src="{{ asset('img/logoUT.png') }}" alt="" width="130px">
                             </div>
                             <h5 class="card-title">FEB</h5>
                             <p>Some quick example text to build on the card title and make up the bulk of
@@ -165,7 +179,7 @@
                     <img src="{{ asset('img/mhs.png') }}" alt="" width="270px">
                 </div>
                 <div class="col-12 col-lg-7" data-aos="fade-left">
-                    <h1 class="mb-3 mb-lg-4 text-dark">Kenapa mendaftar di Salut DOKTORTJ Tegal</h1>
+                    <h1 class="mb-3 mb-lg-4 text-dark fw-bold">Kenapa mendaftar di Salut DOKTORTJ Tegal?</h1>
                     <div>
                         <ul class="list-group">
                             <li class="list-group-item border-0 bg-transparent text-dark py-1 px-0"><i
@@ -197,7 +211,7 @@
     </section>
     <section id="alur" class="my-bg-gray">
         <div class="container p-4">
-            <h1 class="text-center mb-3 mb-lg-4" data-aos="fade-up">Alur Pendaftaran</h1>
+            <h1 class="text-center mb-3 mb-lg-4 sub-title pb-3 fw-bold" data-aos="fade-up">ALUR PENDAFTARAN</h1>
             <div class="row" data-aos="fade-up">
                 <div class="col lg-4 text-center">
                     <img src="{{ asset('img/alur1.png') }}" alt="" height="170px">
@@ -227,7 +241,7 @@
             <div class="row">
                 <div class="col-lg-6 mb-4" data-aos="fade-right">
                     <div class="col">
-                        <h1 class="mb-3 mb-lg-4 text-dark">Lokasi Kami</h1>
+                        <h1 class="mb-3 mb-lg-4 text-dark sub-title pb-3 fw-bold">LOKASI KAMI</h1>
                     </div>
                     <div class="col">
                         <h5 class="mb-2">Alamat</h5>
@@ -259,7 +273,7 @@
     <section class="my-bg-blue">
         <div class="container text-light p-4">
             <div class="container text-center">
-                <h1 class="mb-3 mb-lg-4" data-aos="fade-up">Masih bingung pilih kampus?</h1>
+                <h1 class="mb-3 mb-lg-4 fw-bold" data-aos="fade-up">Masih bingung pilih kampus?</h1>
                 <p class="fs-5 mb-3 mb-lg-4" data-aos="fade-up">Yuk, kuliah sambil kerja di Universitas Terbuka dan raih
                     cita-citamu bersama
                     Salut
@@ -274,7 +288,7 @@
     </section>
     <section id="faq">
         <div class="container p-4 text-center">
-            <h1 class="mb-3" data-aos="fade-up">FAQ</h1>
+            <h1 class="mb-3 sub-title pb-3 fw-bold" data-aos="fade-up">FAQ</h1>
             <div class="accordion my-5" id="accordionExample" data-aos="fade-up">
 
                 <!-- Item 1 -->
