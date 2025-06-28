@@ -50,10 +50,14 @@
                                 <i class="ti ti-lock"></i>
                                 <span>Lock Screen</span>
                             </a>
-                            <a href="#!">
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <i class="ti ti-power"></i>
                                 <span>Logout</span>
                             </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -63,9 +67,8 @@
                 <li class="pc-item pc-caption">
                     <label>Navigation</label>
                 </li>
-
-                <li class="pc-item active">
-                    <a href="../dashboard/index.html" class="pc-link">
+                <li class="pc-item">
+                    <a href="{{ route('dashboard') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="fas fa-home"></i>
                         </span>
@@ -73,7 +76,7 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="../dashboard/index.html" class="pc-link">
+                    <a href="{{ route('fakultas') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="fas fa-university"></i>
                         </span>
@@ -81,7 +84,7 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="../dashboard/index.html" class="pc-link">
+                    <a href="{{ route('prodi') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="fas fa-book-open"></i>
                         </span>
@@ -89,7 +92,7 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="../dashboard/index.html" class="pc-link">
+                    <a href="{{ route('pendaftar') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="fas fa-user-plus"></i>
                         </span>
@@ -97,7 +100,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </div>
 </nav>

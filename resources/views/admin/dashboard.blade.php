@@ -21,11 +21,14 @@
             </div>
             <!-- [Mobile Media Block end] -->
             <div class="ms-auto my-auto">
-                <button class="btn btn-primary">
-                    <svg class="pc-icon me-2">
-                        <use xlink:href="#custom-logout-1-outline"></use>
-                    </svg>Logout
-                </button>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">
+                        <svg class="pc-icon me-2">
+                            <use xlink:href="#custom-logout-1-outline"></use>
+                        </svg>Logout
+                    </button>
+                </form>
             </div>
         </div>
     </header>

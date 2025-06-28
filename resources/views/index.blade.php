@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 d-flex flex-column justify-content-center text-dark pt-5" style="height: 100%;">
                     <div data-aos="fade-right">
-                        <h1 class="text-center fw-bold text-lg-start pb-2 hero-title">
+                        <h1 class="text-center fw-semibold text-lg-start pb-2 hero-title">
                             Selamat Datang di Sentra Layanan Universitas Terbuka Salut DOKTORTJ Tegal
                         </h1>
                         <p class="fs-5 text-center text-lg-start">
@@ -47,7 +47,8 @@
     </section>
     <section id="tentang">
         <div class="container p-4 text-dark">
-            <h1 class="text-center mb-3 mb-lg-4 text-dark sub-title pb-3 fw-bold" data-aos="fade-up">PROFIL PERUSAHAAN</h1>
+            <h1 class="text-center mb-3 mb-lg-4 text-dark sub-title pb-3 fw-semibold" data-aos="fade-up">PROFIL PERUSAHAAN
+            </h1>
             <div class="row align-items-center align-items-lg-start" data-aos="fade-up">
                 <div class="col-lg-6">
                     <div style="max-width: 100%; display: flex; justify-content: center;">
@@ -97,7 +98,7 @@
 
     <section id="fakultas" class="my-bg-blue">
         <div class="container text-dark p-4">
-            <h1 class="text-center mb-3 mb-lg-4 text-light sub-title pb-3 fw-bold" data-aos="fade-up">FAKULTAS</h1>
+            <h1 class="text-center mb-3 mb-lg-4 text-light sub-title pb-3 fw-semibold" data-aos="fade-up">FAKULTAS</h1>
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-3 mb-2">
                     <div class="card rounded-5 py-2">
@@ -179,7 +180,7 @@
                     <img src="{{ asset('img/mhs.png') }}" alt="" width="270px">
                 </div>
                 <div class="col-12 col-lg-7" data-aos="fade-left">
-                    <h1 class="mb-3 mb-lg-4 text-dark fw-bold">Kenapa mendaftar di Salut DOKTORTJ Tegal?</h1>
+                    <h1 class="mb-3 mb-lg-4 text-dark fw-semibold">Kenapa mendaftar di Salut DOKTORTJ Tegal?</h1>
                     <div>
                         <ul class="list-group">
                             <li class="list-group-item border-0 bg-transparent text-dark py-1 px-0"><i
@@ -211,7 +212,7 @@
     </section>
     <section id="alur" class="my-bg-gray">
         <div class="container p-4">
-            <h1 class="text-center mb-3 mb-lg-4 sub-title pb-3 fw-bold" data-aos="fade-up">ALUR PENDAFTARAN</h1>
+            <h1 class="text-center mb-3 mb-lg-4 sub-title pb-3 fw-semibold" data-aos="fade-up">ALUR PENDAFTARAN</h1>
             <div class="row" data-aos="fade-up">
                 <div class="col lg-4 text-center">
                     <img src="{{ asset('img/alur1.png') }}" alt="" height="170px">
@@ -241,7 +242,7 @@
             <div class="row">
                 <div class="col-lg-6 mb-4" data-aos="fade-right">
                     <div class="col">
-                        <h1 class="mb-3 mb-lg-4 text-dark sub-title pb-3 fw-bold">LOKASI KAMI</h1>
+                        <h1 class="mb-3 mb-lg-4 text-dark sub-title pb-3 fw-semibold">LOKASI KAMI</h1>
                     </div>
                     <div class="col">
                         <h5 class="mb-2">Alamat</h5>
@@ -273,7 +274,7 @@
     <section class="my-bg-blue">
         <div class="container text-light p-4">
             <div class="container text-center">
-                <h1 class="mb-3 mb-lg-4 fw-bold" data-aos="fade-up">Masih bingung pilih kampus?</h1>
+                <h1 class="mb-3 mb-lg-4 fw-semibold" data-aos="fade-up">Masih bingung pilih kampus?</h1>
                 <p class="fs-5 mb-3 mb-lg-4" data-aos="fade-up">Yuk, kuliah sambil kerja di Universitas Terbuka dan raih
                     cita-citamu bersama
                     Salut
@@ -288,7 +289,7 @@
     </section>
     <section id="faq">
         <div class="container p-4 text-center">
-            <h1 class="mb-3 sub-title pb-3 fw-bold" data-aos="fade-up">FAQ</h1>
+            <h1 class="mb-3 sub-title pb-3 fw-semibold" data-aos="fade-up">FAQ</h1>
             <div class="accordion my-5" id="accordionExample" data-aos="fade-up">
 
                 <!-- Item 1 -->

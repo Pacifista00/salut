@@ -9,6 +9,8 @@ class Fakultas extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name'];
+
     public function prodis()
     {
         return $this->hasMany(Prodi::class);

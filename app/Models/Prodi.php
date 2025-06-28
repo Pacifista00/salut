@@ -9,6 +9,8 @@ class Prodi extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'fakultas_id'];
+
     public function fakultass()
     {
         return $this->belongsTo(Fakultas::class);

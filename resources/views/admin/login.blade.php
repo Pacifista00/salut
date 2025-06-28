@@ -22,23 +22,28 @@
                             <span>OR</span>
                         </div> --}}
                         <h3 class="text-center f-w-500 my-3">Login dengan akun anda</h3>
-                        <div class="form-group mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Email Address">
-                        </div>
-                        <div class="form-group mb-3">
-                            <input type="password" class="form-control" id="floatingInput1" placeholder="Password">
-                        </div>
-                        {{-- <div class="d-flex mt-1 justify-content-between align-items-center">
-                            <div class="form-check">
-                                <input class="form-check-input input-primary" type="checkbox" id="customCheckc1"
-                                    checked="">
-                                <label class="form-check-label text-muted" for="customCheckc1">Remember me?</label>
+                        <form action="{{ route('login-post') }}" method="POST">
+                            @csrf
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" class="form-control" id="floatingInput"
+                                    placeholder="Email Address">
                             </div>
-                            <h6 class="text-secondary f-w-400 mb-0">Forgot Password?</h6>
-                        </div> --}}
-                        <div class="d-grid mt-4">
-                            <button type="button" class="btn btn-primary">Login</button>
-                        </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password" class="form-control" id="floatingInput1"
+                                    placeholder="Password">
+                            </div>
+                            {{-- <div class="d-flex mt-1 justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input class="form-check-input input-primary" type="checkbox" id="customCheckc1"
+                                        checked="">
+                                    <label class="form-check-label text-muted" for="customCheckc1">Remember me?</label>
+                                </div>
+                                <h6 class="text-secondary f-w-400 mb-0">Forgot Password?</h6>
+                            </div> --}}
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
                         <div class="d-flex justify-content-between align-items-end mt-4">
                             <h6 class="f-w-500 mb-0">Belum mempunyai akun?</h6>
                             <a href="#" class="link-primary">Buat akun</a>
