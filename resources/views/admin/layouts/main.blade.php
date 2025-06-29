@@ -13,7 +13,6 @@
     <meta name="keywords"
         content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
     <meta name="author" content="Phoenixcoded">
-
     <!-- [Favicon] icon -->
     <link rel="icon" href="{{ asset('dashboard-assets/images/favicon.svg') }}" type="image/x-icon">
     <!-- [Font] Family -->
@@ -29,6 +28,7 @@
     <!-- [Template CSS Files] -->
     <link rel="stylesheet" href="{{ asset('dashboard-assets/css/style.css') }}" id="main-style-link">
     <link rel="stylesheet" href="{{ asset('dashboard-assets/css/style-preset.css') }}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
@@ -37,7 +37,6 @@
     data-pc-theme_contrast="" data-pc-theme="light">
     @yield('dashboard-content')
     <!-- [Page Specific JS] start -->
-    <script src="{{ asset('dashboard-assets/js/plugins/apexcharts.min.js') }}"></script>
     <script src="{{ asset('dashboard-assets/js/pages/dashboard-default.js') }}"></script>
     <!-- [Page Specific JS] end -->
     <!-- Required Js -->

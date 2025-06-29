@@ -31,16 +31,26 @@ Route::get('/form-pendaftaran', [MainController::class, 'formPage'])->name('form
 
 Route::post('/daftar', [PendaftaranController::class, 'daftar'])->name('daftar');
 
-
-
-Route::group(['middleware'=>'guest'],function () {
+Route::group(['middleware' => 'guest'], function () {
     Route::get('/login', [AuthController::class, 'index'])->name('login');
     Route::post('/login-post', [AuthController::class, 'login'])->name('login-post');
 });
-Route::group(['middleware'=>'auth'],function () {
+
+Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
     Route::get('/dashboard/fakultas', [FakultasController::class, 'index'])->name('fakultas');
+    Route::post('/dashboard/fakultas/store', [FakultasController::class, 'store'])->name('store-fakultas');
+    Route::put('/dashboard/fakultas/update/{id}', [FakultasController::class, 'update'])->name('update-fakultas');
+    Route::delete('/dashboard/fakultas/destroy/{id}', [FakultasController::class, 'destroy'])->name('destroy-fakultas');
+
     Route::get('/dashboard/prodi', [ProdiController::class, 'index'])->name('prodi');
+    Route::post('/dashboard/prodi/store', [ProdiController::class, 'store'])->name('store-prodi');
+    Route::post('/dashboard/prodi/update', [ProdiController::class, 'update'])->name('update-prodi');
+    Route::post('/dashboard/prodi/destroy', [ProdiController::class, 'destroy'])->name('destroy-prodi');
+
     Route::get('/dashboard/pendaftar', [PendaftarController::class, 'index'])->name('pendaftar');
+    Route::get('/dashboard/pendaftar/update', [PendaftarController::class, 'update'])->name('update-pendaftar');
+    Route::get('/dashboard/pendaftar/destroy', [PendaftarController::class, 'destroy'])->name('destroy-pendaftar');
 });

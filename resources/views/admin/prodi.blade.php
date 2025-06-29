@@ -60,10 +60,51 @@
             </div>
             <!-- [ breadcrumb ] end -->
             <!-- [ Main Content ] start -->
-
+            <div class="container">
+                <div id="loadingSpinner"
+                    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999; display: flex; justify-content: center; align-items: center;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <table id="tabelProdi" class="display" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            {{-- <th>Fakultas</th> --}}
+                            <th>Fakultas</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($prodi as $prodiItem)
+                            <tr>
+                                <td>{{ $prodiItem->nama }}</td>
+                                <td>{{ $prodiItem->fakultas->nama }}</td>
+                                <td>{{ $prodiItem->nama }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
             <!-- [ Main Content ] end -->
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Inisialisasi DataTable
+            new DataTable('#tabelProdi');
+        });
+
+        window.onload = function() {
+            setTimeout(function() {
+                $('#tabelProdi').fadeIn(); // Tampilkan tabel
+                $('#loadingSpinner').fadeOut(); // Hilangkan loading
+            });
+        };
+    </script>
     <!-- [ Main Content ] end -->
     @include('admin.partials.footer')
 @endsection
