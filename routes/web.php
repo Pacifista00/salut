@@ -47,10 +47,10 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/dashboard/prodi', [ProdiController::class, 'index'])->name('prodi');
     Route::post('/dashboard/prodi/store', [ProdiController::class, 'store'])->name('store-prodi');
-    Route::post('/dashboard/prodi/update', [ProdiController::class, 'update'])->name('update-prodi');
-    Route::post('/dashboard/prodi/destroy', [ProdiController::class, 'destroy'])->name('destroy-prodi');
+    Route::put('/dashboard/prodi/update/{id}', [ProdiController::class, 'update'])->name('update-prodi');
+    Route::delete('/dashboard/prodi/destroy/{id}', [ProdiController::class, 'destroy'])->name('destroy-prodi');
 
     Route::get('/dashboard/pendaftar', [PendaftarController::class, 'index'])->name('pendaftar');
-    Route::get('/dashboard/pendaftar/update', [PendaftarController::class, 'update'])->name('update-pendaftar');
-    Route::get('/dashboard/pendaftar/destroy', [PendaftarController::class, 'destroy'])->name('destroy-pendaftar');
+    Route::put('/dashboard/pendaftar/update/{id}', [PendaftarController::class, 'update'])->name('update-pendaftar');
+    Route::delete('/dashboard/pendaftar/destroy/{id}', [PendaftarController::class, 'destroy'])->name('destroy-pendaftar');
 });

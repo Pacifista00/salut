@@ -190,3 +190,8 @@ body {
     border-color: #ced4da !important;
 }
 /* end form page */
+
+/* form dashboard */
+select:invalid {
+    color: #6c757d; /* warna abu-abu Bootstrap (text-secondary) */
+}

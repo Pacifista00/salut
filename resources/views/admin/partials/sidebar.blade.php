@@ -22,11 +22,11 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                            <img src="{{ asset('dashboard-assets/images/user/avatar-1.jpg') }}" alt="user-image"
+                            <img src="{{ asset('dashboard-assets/images/user/profile.webp') }}" alt="user-image"
                                 class="user-avtar wid-45 rounded-circle" />
                         </div>
                         <div class="flex-grow-1 ms-3 me-2">
-                            <h6 class="mb-0">Jonh Smith</h6>
+                            <h6 class="mb-0">{{ $user->username }}</h6>
                             <small>Administrator</small>
                         </div>
                         <a class="btn btn-icon btn-link-secondary avtar" data-bs-toggle="collapse"
@@ -38,9 +38,9 @@
                     </div>
                     <div class="collapse pc-user-links" id="pc_sidebar_userlink">
                         <div class="pt-3">
-                            <a href="#!">
+                            {{-- <a href="#!">
                                 <i class="ti ti-user"></i>
-                                <span>My Account</span>
+                                <span>Akun Saya</span>
                             </a>
                             <a href="#!">
                                 <i class="ti ti-settings"></i>
@@ -49,7 +49,7 @@
                             <a href="#!">
                                 <i class="ti ti-lock"></i>
                                 <span>Lock Screen</span>
-                            </a>
+                            </a> --}}
                             <a href="{{ route('logout') }}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <i class="ti ti-power"></i>

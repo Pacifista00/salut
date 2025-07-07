@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('prodis', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama');
-            $table->enum('akreditasi', ['A','B','C','D','E']);
-            $table->foreignId('fakultas_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->timestamps();
+        Schema::create('pengunjungs', function (Blueprint $table) {
+            $table->id();$table->string('ip_address');
+            $table->timestamp('visited_at')->useCurrent(); 
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('prodis');
+        Schema::dropIfExists('pengunjungs');
     }
 };

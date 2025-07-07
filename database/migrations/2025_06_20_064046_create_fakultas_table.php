@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('fakultas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
+            $table->string('nama_singkat');
+            $table->string('nama_lengkap');
             $table->timestamps();
         });
     }

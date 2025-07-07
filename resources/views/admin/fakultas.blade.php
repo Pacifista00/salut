@@ -74,14 +74,16 @@
                 <table id="tabelFakultas" class="display" style="display: none;">
                     <thead>
                         <tr>
-                            <th>Nama</th>
+                            <th>Nama singkat</th>
+                            <th>Nama lengkap</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($fakultas as $fakultasItem)
                             <tr>
-                                <td>{{ $fakultasItem->nama }}</td>
+                                <td>{{ $fakultasItem->nama_singkat }}</td>
+                                <td>{{ $fakultasItem->nama_lengkap }}</td>
                                 <td>
                                     <button class="btn btn-sm btn-warning" data-bs-toggle="modal"
                                         data-bs-target="#modalEditFakultas{{ $fakultasItem->id }}"
@@ -110,17 +112,29 @@
                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body px-4 py-3">
-                                                <label for="namaFakultas" class="form-label fw-medium">Nama
-                                                    Fakultas</label>
-                                                <input type="text" class="form-control rounded-pill" id="namaFakultas"
-                                                    name="nama" value="{{ $fakultasItem->nama }}" required>
+                                                <div class="mb-3">
+                                                    <label for="namaSingkat" class="form-label fw-medium">Nama
+                                                        Fakultas Singkat</label>
+                                                    <input type="text" class="form-control rounded-pill" id="namaSingkat"
+                                                        name="nama_singkat" value="{{ $fakultasItem->nama_singkat }}"
+                                                        required>
+                                                </div>
+                                                <div class="mb-1">
+                                                    <label for="namaLengkap" class="form-label fw-medium">Nama Fakultas
+                                                        Lengkap
+                                                    </label>
+                                                    <input type="text" class="form-control rounded-pill" id="namaLengkap"
+                                                        name="nama_lengkap" value="{{ $fakultasItem->nama_lengkap }}"
+                                                        required>
+                                                </div>
+
                                             </div>
                                             <div class="modal-footer">
                                                 {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                                     <i class="fas fa-times me-1"></i> Close
                                                 </button> --}}
                                                 <button type="submit" class="btn btn-primary">
-                                                    <i class="fas fa-save me-1"></i> Save changes
+                                                    <i class="fas fa-save me-1"></i> Ubah
                                                 </button>
                                             </div>
                                         </form>
@@ -146,10 +160,10 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                    <i class="fas fa-times me-1"></i> Close
+                                                    <i class="fas fa-times me-1"></i> Batal
                                                 </button>
                                                 <button type="submit" class="btn btn-danger">
-                                                    <i class="fas fa-save me-1"></i> Save changes
+                                                    <i class="fas fa-save me-1"></i> Hapus
                                                 </button>
                                             </div>
                                         </form>
@@ -178,17 +192,25 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body px-4 py-3">
-                        <label for="namaFakultas" class="form-label fw-medium">Nama
-                            Fakultas</label>
-                        <input type="text" class="form-control rounded-pill" id="namaFakultas" name="nama"
-                            placeholder="Masukkan Nama Fakultas" required>
+                        <div class="mb-3">
+                            <label for="namaSingkat" class="form-label fw-medium">Nama
+                                Fakultas Singkat</label>
+                            <input type="text" class="form-control rounded-pill" id="namaSingkat" name="nama_singkat"
+                                placeholder="Masukkan Nama Fakultas Singkat" required>
+                        </div>
+                        <div class="mb-1">
+                            <label for="namaLengkap" class="form-label fw-medium">Nama
+                                Fakultas Lengkap</label>
+                            <input type="text" class="form-control rounded-pill" id="namaLengkap" name="nama_lengkap"
+                                placeholder="Masukkan Nama Fakultas Lengkap" required>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             <i class="fas fa-times me-1"></i> Close
                         </button> --}}
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-save me-1"></i> Save changes
+                            <i class="fas fa-save me-1"></i> Tambah
                         </button>
                     </div>
                 </form>

@@ -3,7 +3,7 @@
 <!-- [Head] start -->
 
 <head>
-    <title>Dashboard Salut DOKTORTJ Tegal</title>
+    <title>{{ $judul }}</title>
     <!-- [Meta] -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -13,8 +13,8 @@
     <meta name="keywords"
         content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
     <meta name="author" content="Phoenixcoded">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- [Favicon] icon -->
-    <link rel="icon" href="{{ asset('dashboard-assets/images/favicon.svg') }}" type="image/x-icon">
     <!-- [Font] Family -->
     <link rel="stylesheet" href="{{ asset('dashboard-assets/fonts/inter/inter.css') }}" id="main-font-link" />
     <!-- [Tabler Icons] https://tablericons.com -->
@@ -47,6 +47,26 @@
     <script src="{{ asset('dashboard-assets/js/script.js') }}"></script>
     <script src="{{ asset('dashboard-assets/js/theme.js') }}"></script>
     <script src="{{ asset('dashboard-assets/js/plugins/feather.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if (session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Sukses!',
+                text: '{{ session('success') }}',
+            });
+        @elseif (session('errors'))
+            let errorMessages = '';
+            @foreach (session('errors')->all() as $error)
+                errorMessages += '• {{ $error }}\n';
+            @endforeach
+            Swal.fire({
+                icon: 'error',
+                title: 'Validasi Gagal',
+                text: errorMessages,
+            });
+        @endif
+    </script>
     <script>
         change_box_container('false');
     </script>

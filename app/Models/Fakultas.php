@@ -9,7 +9,7 @@ class Fakultas extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama'];
+    protected $fillable = ['nama_singkat', 'nama_lengkap'];
 
     public function prodi()
     {

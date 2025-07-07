@@ -9,7 +9,7 @@ class Prodi extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'fakultas_id'];
+    protected $fillable = ['nama', 'fakultas_id', 'akreditasi'];
 
     public function fakultas()
     {

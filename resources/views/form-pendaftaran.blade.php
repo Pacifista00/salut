@@ -78,7 +78,7 @@
                                     <span class="input-group-text rounded-start-pill bg-white border-end-0">
                                         <i class="fa fa-id-card"></i>
                                     </span>
-                                    <input type="text" class="form-control rounded-end-pill border-start-0"
+                                    <input type="number" class="form-control rounded-end-pill border-start-0"
                                         name="nik" value="{{ old('nik') }}" required>
                                 </div>
                             </div>

@@ -11,7 +11,9 @@ use App\Models\User;
 class AuthController extends Controller
 {
     public function index(){
-        return view('admin.login');
+        return view('admin.login', [
+            'judul' => 'Dashboard | Login'
+        ]);
     }
     public function login(Request $request){
         $credentials = $request->validate([

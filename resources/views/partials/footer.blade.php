@@ -4,21 +4,26 @@
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <h5 class="text-uppercase mb-4">SALUT DOKTORTJ TEGAL</h5>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatibus facilis harum officiis
-                    ullam voluptatem eius dolores fuga illum quae quam, quis aut?
+                    DOKTORTJ adalah Sentra Layanan Universitas Terbuka (SALUT) resmi yang berlokasi di Tegal. Kami hadir
+                    sebagai mitra terpercaya Universitas Terbuka dalam menyediakan akses pendidikan tinggi yang
+                    fleksibel, berkualitas, dan terjangkau bagi seluruh lapisan masyarakat.
                 </p>
                 <div class="mt-4 d-flex gap-2">
-                    <a type="button" class="btn my-btn btn-lg rounded-circle">
+                    <a href="https://www.facebook.com/profile.php?id=100095436735845" type="button"
+                        class="btn my-btn btn-lg rounded-circle">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a type="button" class="btn my-btn btn-lg rounded-circle">
+                    <a href="https://www.instagram.com/salutdoktortjtegal?igsh=YXFkcXAxM3MydnRh" type="button"
+                        class="btn my-btn btn-lg rounded-circle">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a type="button" class="btn my-btn btn-lg rounded-circle">
+                    <a href="https://www.tiktok.com/@salutdoktortjtegal?_t=ZS-8xoa18D7Xdw&_r=1" type="button"
+                        class="btn my-btn btn-lg rounded-circle">
                         <i class="fab fa-tiktok"></i>
                     </a>
-                    <a type="button" class="btn my-btn btn-lg rounded-circle">
-                        <i class="fab fa-google"></i>
+                    <a href="mailto:salutdoktortjtegal080623@gmail.com" type="button"
+                        class="btn my-btn btn-lg rounded-circle">
+                        <i class="fa-regular fa-envelope"></i>
                     </a>
                 </div>
             </div>
@@ -55,7 +60,8 @@
                 <h5 class="text-uppercase mb-4">Hubungi kami</h5>
                 <p>Jangan ragu untuk bergabung dan daftarkan dirimu di Salut DOKTORTJ Tegal, pilihan tepat untuk masa
                     depanmu.</p>
-                <a href="{{ route('daftar') }}" class="btn my-btn rounded-pill w-100 fw-semibold">Daftar Sekarang!</a>
+                <a href="{{ url('/form-pendaftaran') }}" class="btn my-btn rounded-pill w-100 fw-semibold">Daftar
+                    Sekarang!</a>
 
             </div>
         </div>

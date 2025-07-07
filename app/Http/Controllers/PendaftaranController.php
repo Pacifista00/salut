@@ -15,7 +15,7 @@ class PendaftaranController extends Controller
             'tempat_lahir' => 'required|string|max:255',
             'tanggal_lahir' => 'required|date_format:Y-m-d',
             'nama_ibu_kandung' => 'required|string|max:255',
-            'nik' => 'required|numeric|digits:16',
+            'nik' => 'required|string|digits:16',
             'jalur_program' => 'required|string',
             'jenjang_universitas' => 'required|string',
             'program_studi' => 'required|string',
@@ -24,9 +24,9 @@ class PendaftaranController extends Controller
             'email' => 'required|email|unique:pendaftars,email',
             'jenjang_pendidikan_terakhir' => 'required|string',
             'asal_sekolah' => 'required|string',
-            'nomor_ijazah' => 'required|numeric',
+            'nomor_ijazah' => 'required|string',
             'tahun_ijazah' => 'required|digits:4|integer',
-            'nisn' => 'required|numeric|max:20',
+            'nisn' => 'required|string|max:20',
             'jurusan_asal' => 'required|string',
         ]);
 

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
             $table->string('nama_ibu_kandung');
-            $table->integer('nik');
+            $table->string('nik');
             $table->string('jalur_program');
             $table->string('jenjang_universitas');
             $table->string('program_studi');
@@ -27,9 +27,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('jenjang_pendidikan_terakhir');
             $table->string('asal_sekolah');
-            $table->integer('nomor_ijazah');
+            $table->string('nomor_ijazah');
             $table->year('tahun_ijazah');
-            $table->integer('nisn');
+            $table->string('nisn');
             $table->string('jurusan_asal');
             $table->timestamps();
         });

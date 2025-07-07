@@ -91,12 +91,12 @@
                                 <div class="mt-3 row align-items-center">
                                     <div class="col-7">
                                         {{-- <div id="all-earnings-graph"></div> --}}
-                                        <h1 class="text-center">123</h1>
+                                        <h1 class="text-center">{{ $pendaftar_count }}</h1>
                                     </div>
                                     <div class="col-5">
                                         <h5 class="mb-1">Peningkatan</h5>
                                         {{-- <h5 class="mb-1">Bulan ini</h5> --}}
-                                        <p class="text-primary mb-0"><i class="ti ti-arrow-up-right"></i> 30.6%</p>
+                                        <p class="text-primary mb-0"><i class="ti ti-arrow-up-right"></i> 0%</p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="mt-3 row align-items-center">
                                     <div class="col-7">
                                         {{-- <div id="page-views-graph"></div> --}}
-                                        <h1 class="text-center">123</h1>
+                                        <h1 class="text-center">{{ $fakultas_count }}</h1>
                                     </div>
                                     <div class="col-5">
                                         <h5 class="mb-1">Penambahan</h5>
@@ -188,7 +188,7 @@
                                 <div class="mt-3 row align-items-center">
                                     <div class="col-7">
                                         {{-- <div id="total-task-graph"></div> --}}
-                                        <h1 class="text-center">123</h1>
+                                        <h1 class="text-center">{{ $prodi_count }}</h1>
                                     </div>
                                     <div class="col-5">
                                         <h5 class="mb-1">Penambahan</h5>
@@ -227,7 +227,7 @@
                                 <div class="mt-3 row align-items-center">
                                     <div class="col-7">
                                         {{-- <div id="download-graph"></div> --}}
-                                        <h1 class="text-center">123</h1>
+                                        <h1 class="text-center">{{ $pengunjung_count }}</h1>
                                     </div>
                                     <div class="col-5">
                                         <h5 class="mb-1">Peningkatan</h5>

@@ -13,17 +13,23 @@ class FakultasController extends Controller
 
         return view(
             'admin.fakultas',
-            ['fakultas' => $fakultas]
+            [
+                'fakultas' => $fakultas,
+                'judul' => 'Dashboard | Fakultas',
+                'user' => auth()->user()
+            ]
         );
     }
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required|string|max:255|unique:fakultas,nama',
+            'nama_singkat' => 'required|string|max:255',
+            'nama_lengkap' => 'required|string|max:255',
         ]);
 
         Fakultas::create([
-            'nama' => $request->nama,
+            'nama_singkat' => $request->nama_singkat,
+            'nama_lengkap' => $request->nama_lengkap,
         ]);
 
         return redirect()->back()->with('success', 'Fakultas berhasil ditambahkan.');
@@ -31,16 +37,18 @@ class FakultasController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama' => 'required|string|max:255|unique:fakultas,nama',
+            'nama_singkat' => 'required|string|max:255',
+            'nama_lengkap' => 'required|string|max:255',
         ]);
 
         $fakultas = Fakultas::find($id);
 
         $fakultas->update([
-            'nama' => $request->nama,
+            'nama_singkat' => $request->nama_singkat,
+            'nama_lengkap' => $request->nama_lengkap,
         ]);
-
-        return redirect()->back()->with('success', 'Fakultas berhasil ditambahkan.');
+    
+        return redirect()->back()->with('success', 'Fakultas berhasil diubah.');
     }
     public function destroy($id)
     {
@@ -48,6 +56,6 @@ class FakultasController extends Controller
 
         $fakultas->delete();
 
-        return redirect()->back()->with('success', 'Fakultas berhasil ditambahkan.');
+        return redirect()->back()->with('success', 'Fakultas berhasil dihapus.');
     }
 }
